@@ -1,7 +1,7 @@
 const degreesCelsius = Number.parseInt(prompt("Введите температуру в градусах Цельсия: "));
-alert(degreesFahrenheit(degreesCelsius));
+alert(`Температура ${degreesCelsius} в Цельсиях равна ${degreesFahrenheit(degreesCelsius)} в Фаренгейтах. `);
 
 function degreesFahrenheit(celsius) {
-    let result = Math.round10((9 / 5) * celsius + 32);
-    return result;
+    let result = (9 / 5) * celsius + 32;
+    return result.toFixed(2);
 }
